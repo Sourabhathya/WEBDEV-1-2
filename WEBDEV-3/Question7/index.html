@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./assets/pexels-andrea-piacquadio-3781915.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-ash-376464.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-cottonbro-studio-6334577.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-magda-ehlers-5312889.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-maël-balland-3098970.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-neosiam-707571.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-run-ffwpu-3632853.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-ylanite-koppens-13553844.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-ylanite-koppens-9260835.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-ash-376464.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-andrea-piacquadio-3781915.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/pexels-magda-ehlers-5312889.jpg" alt="Image 12">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</body>
+</html>
